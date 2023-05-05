@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <audio class="audio" src="" controls></audio>
+    <div class="container">
+        <div class="navTop">
+            <div class="nav-button"><i class="material-icons">keyboard_arrow_left</i></div>
+            <div class="nav-button"><i class="material-icons">turned_in_not</i></div>
+        </div>
+        <div class="img"></div>
+        <div class="musicName"></div>
+        <div class="artistName">Artist name</div>
+        <input class="range" type="range" value="0" min="0" max="0">
+        <div class="nav">
+            <div class="nav-button" id="add"><i class="material-icons">playlist_add</i></div>
+            <div class="nav-button" id="prev" onclick="prevName()"><i class="material-icons">skip_previous</i></div>
+            <div class="nav-button" id="play" onclick="playAudio()"><i id="playIcon"
+                    class="material-icons">play_arrow</i></div>
+            <div class="nav-button" id="next" onclick="nextName()"><i class="material-icons">skip_next</i></div>
+            <div class="nav-button" id="share"><i class="material-icons">share</i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
